@@ -18,7 +18,7 @@ exports.CreateBudgetDto = CreateBudgetDto;
 __decorate([
     (0, swagger_1.ApiProperty)({
         description: 'Create limit',
-        example: '4000'
+        example: '4000',
     }),
     (0, class_validator_1.IsNumber)(),
     (0, class_validator_1.IsNotEmpty)(),
@@ -27,7 +27,7 @@ __decorate([
 __decorate([
     (0, swagger_1.ApiProperty)({
         description: 'Create current spent',
-        example: '2000'
+        example: '2000',
     }),
     (0, class_validator_1.IsNumber)(),
     (0, class_validator_1.IsNotEmpty)(),
@@ -36,10 +36,10 @@ __decorate([
 __decorate([
     (0, swagger_1.ApiProperty)({
         description: 'Create category',
-        example: 'Groceries'
+        example: 'Groceries',
     }),
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], CreateBudgetDto.prototype, "category", void 0);
+], CreateBudgetDto.prototype, "categoryId", void 0);
 //# sourceMappingURL=create-budget.dto.js.map

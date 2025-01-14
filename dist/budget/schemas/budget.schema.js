@@ -25,7 +25,7 @@ __decorate([
 __decorate([
     (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", String)
-], Budget.prototype, "category", void 0);
+], Budget.prototype, "categoryId", void 0);
 exports.Budget = Budget = __decorate([
     (0, mongoose_1.Schema)({
         timestamps: true,

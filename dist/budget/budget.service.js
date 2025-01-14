@@ -25,7 +25,7 @@ let BudgetService = class BudgetService {
         const newBudget = await this.budgetModel.create(budget);
         return {
             message: 'Budget Created successfully',
-            budget: newBudget
+            budget: newBudget,
         };
     }
 };

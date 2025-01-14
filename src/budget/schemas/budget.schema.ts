@@ -13,7 +13,7 @@ export class Budget{
     currentSpent?: number;
 
     @Prop({required:true})
-    category: string;
+    categoryId: string;
 }
 
 export const BudgetSchema = SchemaFactory.createForClass(Budget);

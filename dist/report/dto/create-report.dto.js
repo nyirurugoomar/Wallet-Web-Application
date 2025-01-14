@@ -11,15 +11,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreateReportDto = void 0;
 const class_validator_1 = require("class-validator");
+const swagger_1 = require("@nestjs/swagger");
 class CreateReportDto {
 }
 exports.CreateReportDto = CreateReportDto;
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'Start Date',
+        example: '2024-01-01'
+    }),
     (0, class_validator_1.IsDateString)(),
-    __metadata("design:type", String)
+    __metadata("design:type", Date)
 ], CreateReportDto.prototype, "startDate", void 0);
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'End Date',
+        example: '2024-01-30'
+    }),
     (0, class_validator_1.IsDateString)(),
-    __metadata("design:type", String)
+    __metadata("design:type", Date)
 ], CreateReportDto.prototype, "endDate", void 0);
 //# sourceMappingURL=create-report.dto.js.map

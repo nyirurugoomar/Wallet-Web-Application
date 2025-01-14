@@ -6,10 +6,10 @@ import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 })
 
 export class Category{
-    @Prop()
+    @Prop({required: true})
     name: string;
     
-    @Prop()
+    @Prop({required:false})
     subCategory?: string;
 }
 

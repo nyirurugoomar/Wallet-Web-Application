@@ -14,7 +14,7 @@ export class Transaction{
     type: string;
 
     @Prop()
-    date: Date;
+    date: string;
 
     @Prop({ type: Types.ObjectId, ref: 'Account' })
     account: Types.ObjectId[];

@@ -33,7 +33,7 @@ __decorate([
         status: 201,
         description: 'Budget created successfully',
         type: create_budget_dto_1.CreateBudgetDto,
-        isArray: true
+        isArray: true,
     }),
     (0, swagger_1.ApiNotFoundResponse)({ description: 'Fail to create budget' }),
     __param(0, (0, common_1.Body)()),

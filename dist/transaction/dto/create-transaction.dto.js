@@ -11,29 +11,50 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreateTransactionDto = void 0;
 const class_validator_1 = require("class-validator");
+const swagger_1 = require("@nestjs/swagger");
 class CreateTransactionDto {
 }
 exports.CreateTransactionDto = CreateTransactionDto;
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'Amount',
+        example: '1000'
+    }),
     (0, class_validator_1.IsNumber)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Number)
 ], CreateTransactionDto.prototype, "amount", void 0);
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'Types of transaction',
+        example: 'income | expense'
+    }),
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], CreateTransactionDto.prototype, "type", void 0);
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'Date of transaction',
+        example: '1/1/2024'
+    }),
     (0, class_validator_1.IsDate)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Date)
 ], CreateTransactionDto.prototype, "date", void 0);
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'AccountID of transaction',
+        example: 'accountID'
+    }),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], CreateTransactionDto.prototype, "accountId", void 0);
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'CategoryID of transaction',
+        example: 'categoryID'
+    }),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], CreateTransactionDto.prototype, "categoryId", void 0);

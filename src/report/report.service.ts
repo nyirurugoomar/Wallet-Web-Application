@@ -34,14 +34,14 @@ export class ReportService {
           }
         });
     
-        const Balance = totalIncome - totalExpense;
+        const netBalance = totalIncome - totalExpense;
     
         return {
           startDate,
           endDate,
           totalIncome,
           totalExpense,
-          Balance
+          netBalance
         };
       }
 }

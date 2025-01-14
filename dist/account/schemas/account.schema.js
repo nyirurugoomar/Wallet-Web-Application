@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AccountSchema = exports.Account = exports.AccountName = void 0;
 const mongoose_1 = require("@nestjs/mongoose");
+const swagger_1 = require("@nestjs/swagger");
 var AccountName;
 (function (AccountName) {
     AccountName["BANK_ACCOUNT"] = "Bank Account";
@@ -21,14 +22,26 @@ let Account = class Account {
 };
 exports.Account = Account;
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'Create account name',
+        example: 'CHOOSE: Bank Account | Mobile Money | Cash',
+    }),
     (0, mongoose_1.Prop)({ required: true, enum: AccountName }),
     __metadata("design:type", String)
 ], Account.prototype, "name", void 0);
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'Type of account',
+        example: 'Bank',
+    }),
     (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", String)
 ], Account.prototype, "accountType", void 0);
 __decorate([
+    (0, swagger_1.ApiProperty)({
+        description: 'Balance',
+        example: '1000',
+    }),
     (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", Number)
 ], Account.prototype, "balance", void 0);

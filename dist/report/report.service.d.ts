@@ -5,10 +5,10 @@ export declare class ReportService {
     private transactionModel;
     constructor(transactionModel: Model<Transaction>);
     generateReport(createReportDto: CreateReportDto): Promise<{
-        startDate: string;
-        endDate: string;
+        startDate: Date;
+        endDate: Date;
         totalIncome: number;
         totalExpense: number;
-        Balance: number;
+        netBalance: number;
     }>;
 }

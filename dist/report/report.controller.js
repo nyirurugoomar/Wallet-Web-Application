@@ -16,6 +16,7 @@ exports.ReportController = void 0;
 const common_1 = require("@nestjs/common");
 const report_service_1 = require("./report.service");
 const create_report_dto_1 = require("./dto/create-report.dto");
+const swagger_1 = require("@nestjs/swagger");
 let ReportController = class ReportController {
     constructor(reportService) {
         this.reportService = reportService;
@@ -27,6 +28,7 @@ let ReportController = class ReportController {
 exports.ReportController = ReportController;
 __decorate([
     (0, common_1.Post)('generate'),
+    (0, swagger_1.ApiOperation)({ summary: 'Create a report for specified date range you want to see report ' }),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [create_report_dto_1.CreateReportDto]),

@@ -4,10 +4,10 @@ export declare class ReportController {
     private readonly reportService;
     constructor(reportService: ReportService);
     generate(createReportDto: CreateReportDto): Promise<{
-        startDate: string;
-        endDate: string;
+        startDate: Date;
+        endDate: Date;
         totalIncome: number;
         totalExpense: number;
-        Balance: number;
+        netBalance: number;
     }>;
 }

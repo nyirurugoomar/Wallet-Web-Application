@@ -2,7 +2,7 @@ import { Types } from 'mongoose';
 export declare class Transaction {
     amount: number;
     type: string;
-    date: Date;
+    date: string;
     account: Types.ObjectId[];
     category: Types.ObjectId[];
 }

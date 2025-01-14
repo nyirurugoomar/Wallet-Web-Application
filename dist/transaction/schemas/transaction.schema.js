@@ -25,7 +25,7 @@ __decorate([
 ], Transaction.prototype, "type", void 0);
 __decorate([
     (0, mongoose_1.Prop)(),
-    __metadata("design:type", Date)
+    __metadata("design:type", String)
 ], Transaction.prototype, "date", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ type: mongoose_2.Types.ObjectId, ref: 'Account' }),
